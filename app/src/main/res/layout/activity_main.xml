@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <include layout="@layout/title_bar" />
+
+
+    <Button
+        android:id="@+id/btn_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标题渲染" />
+
+    <Button
+        android:id="@+id/btntophoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片库选择"/>
+
+    <Button
+        android:id="@+id/btn_pipeview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义图形(饼状,柱状,折线)"/>
+
+
+    <Button
+        android:id="@+id/btn_showdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="日历实现"/>
+
+    <Button
+        android:id="@+id/btn_showdate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片轮播器"/>
+
+
+
+
+</LinearLayout>
