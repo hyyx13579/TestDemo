@@ -45,7 +45,7 @@
         android:id="@+id/btn_qita"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="其他" />
+        android:text="日程管理控件雏形" />
 
 
 
