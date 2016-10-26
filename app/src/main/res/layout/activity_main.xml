@@ -19,26 +19,34 @@
         android:id="@+id/btntophoto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="图片库选择"/>
+        android:text="图片库选择" />
 
     <Button
         android:id="@+id/btn_pipeview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="自定义图形(饼状,柱状,折线)"/>
+        android:text="自定义图形(饼状,柱状,折线)" />
 
 
     <Button
         android:id="@+id/btn_showdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="日历实现"/>
+        android:text="日历实现" />
 
     <Button
         android:id="@+id/btn_showdate2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="图片轮播器"/>
+        android:text="图片轮播器" />
+
+
+    <Button
+        android:id="@+id/btn_qita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其他" />
+
 
 
 

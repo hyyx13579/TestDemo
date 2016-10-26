@@ -2,12 +2,15 @@ package com.example.hyyx.testdemo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
-import com.example.hyyx.testdemo.view.BarGraphView;
 import com.example.hyyx.testdemo.R;
+import com.example.hyyx.testdemo.view.BarGraphView;
+
 
 public class MainActivity extends BaseActivity {
 
@@ -54,7 +57,28 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        ((Button) findViewById(R.id.btn_qita)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, QiTaActivity.class));
+            }
+        });
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
 

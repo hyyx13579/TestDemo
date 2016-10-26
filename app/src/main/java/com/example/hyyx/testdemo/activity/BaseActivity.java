@@ -1,5 +1,6 @@
 package com.example.hyyx.testdemo.activity;
 
+import android.app.Activity;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +9,7 @@ import android.view.WindowManager;
 
 import com.example.hyyx.testdemo.R;
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

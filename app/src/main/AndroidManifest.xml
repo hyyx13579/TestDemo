@@ -27,7 +27,8 @@
         <activity android:name=".activity.PipeActivity" />
         <activity android:name=".activity.ShowDateActivity" />
         <activity android:name=".activity.ShowDate2Activity" />
-        <activity android:name=".activity.RollActivity"></activity>
+        <activity android:name=".activity.RollActivity" />
+        <activity android:name=".activity.QiTaActivity"></activity>
     </application>
 
 </manifest>
