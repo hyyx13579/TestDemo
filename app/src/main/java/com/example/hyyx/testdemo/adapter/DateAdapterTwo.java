@@ -8,6 +8,7 @@ import android.os.Build;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
@@ -290,7 +291,16 @@ public class DateAdapterTwo extends BaseAdapter {
 
 
         popupWindow.setBackgroundDrawable(new BitmapDrawable());
+        popupWindow.setTouchable(true);
         popupWindow.setOutsideTouchable(true);
+        popupWindow.setFocusable(false);
+        popupWindow.setTouchInterceptor(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return false;   // 这里面拦截不到返回键
+            }
+        });
+
         popupWindow.showAsDropDown(anchorView);
 
 
@@ -306,7 +316,9 @@ public class DateAdapterTwo extends BaseAdapter {
         int popLeftPos = pos[0];
         anchorView.getLocationOnScreen(pos);
         int anchorLeftPos = pos[0];
+        //目标view的x坐标－ppw的x坐标＋view的宽度／2－箭头的宽度／2
         int arrowLeftMargin = anchorLeftPos - popLeftPos + anchorView.getWidth() / 2 - upArrow.getWidth() / 2;
+        //判断popupwindow是否超出父控件的高度，true向上箭头，false向下箭头
         upArrow.setVisibility(popupWindow.isAboveAnchor() ? View.INVISIBLE : View.VISIBLE);
         downArrow.setVisibility(popupWindow.isAboveAnchor() ? View.VISIBLE : View.INVISIBLE);
 

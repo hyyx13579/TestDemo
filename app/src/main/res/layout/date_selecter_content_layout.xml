@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="20dp">
+
+
+    <com.example.hyyx.testdemo.view.wheelView.WheelView
+        android:id="@+id/year"
+        android:layout_marginLeft="50dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content" />
+
+
+    <com.example.hyyx.testdemo.view.wheelView.WheelView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/month"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content" />
+
+
+    <!--<com.example.hyyx.testdemo.view.wheelView.WheelView-->
+    <!--android:id="@+id/day"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+</LinearLayout>

@@ -29,7 +29,7 @@ public class TitleWeek extends View {
     private int mWeekSize = 14;
     private Paint paint;
     private DisplayMetrics mDisplayMetrics;
-    private String[] weekString = new String[]{"周日", "周一", "周二", "周三", "周四", "周五", "周六"};
+    private String[] weekString = new String[]{"日", "一", "二", "三", "四", "五", "六"};
 
     public TitleWeek(Context context) {
         super(context);
@@ -76,11 +76,11 @@ public class TitleWeek extends View {
         paint.setStyle(Paint.Style.STROKE);
         paint.setColor(mTopLineColor);
         paint.setStrokeWidth(mStrokeWidth);
-       // canvas.drawLine(0, 10, width, 10, paint);
+        canvas.drawLine(0, 10, width, 10, paint);
 
         //画下横线
         paint.setColor(mBottomLineColor);
-       // canvas.drawLine(0, height, width, height, paint);
+        canvas.drawLine(0, height, width, height, paint);
         paint.setStyle(Paint.Style.FILL);
         paint.setTextSize(mWeekSize * mDisplayMetrics.scaledDensity);
         int columnWidth = width / 7;
@@ -94,9 +94,8 @@ public class TitleWeek extends View {
 //            } else {
 //                paint.setColor(mWeedayColor);
 //            }
-            paint.setColor(textColor);
             canvas.drawText(text, startX, startY, paint);
-           // canvas.drawLine(columnWidth * i, 10, columnWidth * i, height, paint);
+            canvas.drawLine(columnWidth * i, 10, columnWidth * i, height, paint);
         }
     }
 

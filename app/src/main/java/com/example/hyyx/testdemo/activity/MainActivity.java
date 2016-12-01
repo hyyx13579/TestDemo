@@ -64,6 +64,22 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+
+        ((Button) findViewById(R.id.btn_qiniu)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, QiNiuCeShiActivity.class));
+            }
+        });
+
+        ((Button) findViewById(R.id.btn_pick)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, PickerActivity.class));
+            }
+        });
+
+
     }
 
     @Override

@@ -9,16 +9,16 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:padding="10dp"
             android:id="@+id/ll_ppw"
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:layout_below="@+id/up_arrow"
-            android:background="@drawable/inforbg"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:layout_marginTop="-4dp"
+            android:background="@drawable/informationbg"
             android:orientation="vertical"
-            >
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <RelativeLayout
                 android:id="@+id/rv_time"
@@ -51,12 +51,7 @@
                 android:layout_below="@+id/rv_time"></ListView>
 
 
-
-
         </LinearLayout>
-
-
-
 
 
         <ImageView
@@ -64,14 +59,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:background="@drawable/popup_window_arrow_up" />
+            android:background="@drawable/slice_xhdpi" />
 
         <ImageView
             android:id="@+id/down_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_below="@+id/ll_ppw"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-4.5dp"
             android:background="@drawable/down_arrow_drawable" />
     </RelativeLayout>
 </FrameLayout>

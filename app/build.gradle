@@ -26,4 +26,5 @@ dependencies {
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.yuyh.bubble:library:1.0.0'
     compile project(':rollviewpager')
+    compile 'com.qiniu:qiniu-android-sdk:7.3.1'
 }
